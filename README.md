@@ -18,7 +18,7 @@
     - Login to `Your GitHub Account`
     - Create a Repository called `multi-microservices-application-project`
     - Clone the Repository in the `Repository` directory/folder on your `local machine`
-    - Download the code in in this repository `"multi-microservices-application-project main branch"`: https://github.com/awanmbandi/realworld-microservice-project.git
+    - Download the code in in this repository `"multi-microservices-application-project main branch"`: (https://github.com/justine6/realworld-microservice-project.git)
     - `Unzip` the `code/zipped file`
     - `Copy` and `Paste` everything `from the zipped file` into the `repository you cloned` in your local
     - Open your `Terminal`
@@ -47,7 +47,7 @@
 3) Create An IAM Profile/Role For The `Jenkins-CI` Server
 - Create an EC2 Service Role in IAM with AdministratorAccess Privilege 
 - Navigate to IAM
-![IAM!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/blob/zdocs/images/Screen%20Shot%202023-10-03%20at%206.20.44%20PM.png)
+![IAM!](https://github.com/justine6/realworld-cicd-pipeline-project/blob/zdocs/images/Screen%20Shot%202023-10-03%20at%206.20.44%20PM.png)
     - Click on `Roles`
     - Click on `Create Role`
     - Select `Service Role`
@@ -162,8 +162,8 @@ terraform apply --auto-approve
 - Then `Duplicate or Open` a New Console `Tab` and `Switch` to the `Ohio(us-east-2) Region`
 - Navigate to `EKS` and confirm that your Cluster was created successfully with the name `EKS_Cluster`
 - Also confirm there's no issue regarding your Terraform execution
-![JenkinsSetup1!](https://github.com/awanmbandi/realworld-microservice-project/blob/zdocs/images/sdsdsdas.png)
-![JenkinsSetup2!](https://github.com/awanmbandi/realworld-microservice-project/blob/zdocs/images/sfgsfs.png)
+![JenkinsSetup1!](https://github.com/justine6/realworld-microservice-project/blob/zdocs/images/sdsdsdas.png)
+![JenkinsSetup2!](https://github.com/justine6/realworld-microservice-project/blob/zdocs/images/sfgsfs.png)
 
 #### **⚠️`NOTE:ALERT!`⚠️:** FOLLOW THESE STEPS ONLY IF YOUR CLUSTER CREATION FAILED
 - If the Error Message says anything about `EKS IAM Roles` then...
@@ -211,7 +211,7 @@ kubectl get ns
   - Click on `Add Rule`
   - Port Number: `30000-32767`, `80`, `22` Source: `0.0.0.0/0`
   - Click on `SAVE`
-![EKS-Sec-Group-Ports](https://github.com/awanmbandi/realworld-microservice-project/blob/zdocs/images/sec_group.png)
+![EKS-Sec-Group-Ports](https://github.com/justine6/realworld-microservice-project/blob/zdocs/images/sec_group.png)
 
 ### Jenkins setup
 1) #### Access Jenkins
@@ -220,7 +220,7 @@ kubectl get ns
         - Make sure you're still logged into your Jenkins Instance
         - Run the command: `sudo cat /var/lib/jenkins/secrets/initialAdminPassword`
         - Copy the password and login to Jenkins
-    ![JenkinsSetup1!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/jenkins-signup.png) 
+    ![JenkinsSetup1!](https://github.com/justine6/realworld-cicd-pipeline-project/raw/zdocs/images/jenkins-signup.png) 
       - **`NOTE:`** Copy the Outputed Password and Paste in the `Administrator password` in Jenkins
     - Plugins: Choose `Install Suggested Plugings` 
     - Provide 
@@ -229,9 +229,9 @@ kubectl get ns
         - `Name` and `Email` can also be admin. You can use `admin` all, as its a poc.
     - Click `Continue`
     - Click on `Start using Jenkins`
-    ![JenkinsSetup2!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/Screen%20Shot%202023-04-24%20at%208.49.43%20AM.png) 
+    ![JenkinsSetup2!](https://github.com/justine6/realworld-cicd-pipeline-project/raw/zdocs/images/Screen%20Shot%202023-04-24%20at%208.49.43%20AM.png) 
 
-2)  #### Plugin installations:
+2)  #[### Plugin installations:
     - Click on `Manage Jenkins`
     - Click on `Plugins`
     - Click `Available`
@@ -241,7 +241,7 @@ kubectl get ns
         - **Multibranch Scan Webhook Trigger**
         - **Eclipse Temurin installer**
         - **Pipeline: Stage View**
-        - **Docker**
+        - **Docker**](https://github.com/justine6/realworld-microservice-project.git)
         - **Docker Commons**
         - **Docker Pipeline**
         - **docker-build-step**
@@ -276,14 +276,14 @@ kubectl get ns
         * Select `Install from adoptium.net` 
         * Version: **`jdk-17.0.8.1+1`**
 
-        ![JDKSetup!](https://github.com/awanmbandi/realworld-microservice-project/blob/zdocs/images/sdfbdasb.png)
+        ![JDKSetup!](https://github.com/justine6/realworld-microservice-project/blob/zdocs/images/sdfbdasb.png)
     
     - **Gradle Installation**
       - Click on `Add Gradle`
       - Name: `Gradle`
       - Enable `Install automatically`
       - Version: `8.8`
-      ![GradleInstallation!](https://github.com/awanmbandi/realworld-microservice-project/blob/zdocs/images/gradle-setup.png)
+      ![GradleInstallation!](https://github.com/justine6/realworld-microservice-project/blob/zdocs/images/gradle-setup.png)
 
     - **SonarQube Scanner** 
       - Click on `Add SonarQube Scanner` 
@@ -298,7 +298,7 @@ kubectl get ns
         - Version: `latest`
         - Update policy interval (hours): `24`
         - OS platform architecture: `Auto-detection`
-      ![SnykInstallation!](https://github.com/awanmbandi/realworld-microservice-project/blob/zdocs/images/snyk-install.png)
+      ![SnykInstallation!](https://github.com/justine6/realworld-microservice-project/blob/zdocs/images/snyk-install.png)
     
     - **Docker installations** 
       - Click on `Add Docker` 
@@ -307,7 +307,7 @@ kubectl get ns
         - Select `Download from docker.com`
         - Docker version: `latest`
       - Enable: `Install automatically` 
-      ![SonarQubeScanner!](https://github.com/awanmbandi/realworld-microservice-project/blob/zdocs/images/svfdsv.png)
+      ![SonarQubeScanner!](https://github.com/justine6/realworld-microservice-project/blob/zdocs/images/svfdsv.png)
 
 4)  #### Credentials setup(SonarQube, Slack, DockerHub, Kubernetes and ZAP):
     - Click on `Manage Jenkins`
@@ -394,7 +394,7 @@ kubectl get ns
                 - Name: `microservices-web-app-token`
                 - Type: `Global Analysis Token`
                 - Expires in: `30 days`
-              ![Sonar!](https://github.com/awanmbandi/realworld-microservice-project/blob/zdocs/images/sdsdsddsd.png) 
+              ![Sonar!](https://github.com/justine6/realworld-microservice-project/blob/zdocs/images/sdsdsddsd.png) 
               - Click on `GENERATE`
               - NOTE: *`Save The Token Somewhere...`*
 
@@ -512,7 +512,7 @@ kubectl get ns
             - ID: ``Snyk-API-Token``
             - Description: `Snyk-API-Token`
             - Click on `Create`
-        ![KubeCredential!](https://github.com/awanmbandi/realworld-microservice-project/blob/zdocs/images/credentials-jenkins.png)
+        ![KubeCredential!](https://github.com/justine6/realworld-microservice-project/blob/zdocs/images/credentials-jenkins.png)
 
 3)  #### Configure system:    
     1)  - Click on ``Manage Jenkins`` 
@@ -521,7 +521,7 @@ kubectl get ns
         - Name: `Sonar-Server`
         - Server URL: http://YOUR_JENKINS_PRIVATE_IP:9000
         - Server authentication token: Select `SonarQube-Credential`
-        ![SonarQubeServerSetup!](https://github.com/awanmbandi/realworld-microservice-project/blob/zdocs/images/vfsvfs.png)
+        ![SonarQubeServerSetup!](https://github.com/justine6/realworld-microservice-project/blob/zdocs/images/vfsvfs.png)
 
     2)  - Still on `Manage Jenkins` and `Configure System`
         - Scroll down to the `Slack` Section (at the very bottom)
@@ -532,7 +532,7 @@ kubectl get ns
             - Default channel / member id: `#PROVIDE_YOUR_CHANNEL_NAME_HERE`
             - Click on `Test Connection`
             - Click on `Apply` and `Save`
-        ![SlackSetup!](https://github.com/awanmbandi/realworld-microservice-project/blob/zdocs/images/sdgsdfg.png)
+        ![SlackSetup!](https://github.com/justine6/realworld-microservice-project/blob/zdocs/images/sdgsdfg.png)
 
 ### Pipeline creation (Make Sure To Make The Following Updates First)
 - UPDATE YOUR ``Jenkinsfiles...``
@@ -584,17 +584,17 @@ kubectl get ns
 ### Navigate Back To Jenkins and Confirm That All 12 Pipeline Jobs Are Running (11 Microservices Jobs and 1 DB Job)
   - Click on the `Jenkins Pipeline Job Name`
   - Click on `Scan Multibranch Pipeline Now`
-  ![MicroservicesPipelineJobs](https://github.com/awanmbandi/realworld-microservice-project/blob/zdocs/images/scan_all_branch_pipelines.png)
+  ![MicroservicesPipelineJobs](https://github.com/justine6/realworld-microservice-project/blob/zdocs/images/scan_all_branch_pipelines.png)
 
 ### Confirm That All Microservices Branch Pipelines Succeeded (If Not, Troubleshoot)
-![MicroservicesPipelineJobs](https://github.com/awanmbandi/realworld-microservice-project/blob/zdocs/images/piepline1.png)
-![MicroservicesPipelineJobs](https://github.com/awanmbandi/realworld-microservice-project/blob/zdocs/images/piepline2.png)
+![MicroservicesPipelineJobs](https://github.com/justine6/realworld-microservice-project/blob/zdocs/images/piepline1.png)
+![MicroservicesPipelineJobs](https://github.com/justine6/realworld-microservice-project/blob/zdocs/images/piepline2.png)
 
 ### SonarQube Code Inspection Result For All Microservices Source Code
-  ![SonarQubeResult!](https://github.com/awanmbandi/realworld-microservice-project/blob/zdocs/images/sonarqube-test.png)
+  ![SonarQubeResult!](https://github.com/justine6/realworld-microservice-project/blob/zdocs/images/sonarqube-test.png)
 
 ### Also Confirm You Have All Service Deployment/Docker Artifacts In DockerHub
-![DockerHubImages](https://github.com/awanmbandi/realworld-microservice-project/blob/zdocs/images/microservices-artifacts.png)
+![DockerHubImages](https://github.com/justine6/realworld-microservice-project/blob/zdocs/images/microservices-artifacts.png)
 
 ### PERFORM THE DEPLOYMENT IN THE STAGING ENVIRONMENT/NAMESPACE (EKS CLUSTER)
 - To perform the DEPLOYMENT in the staging Envrionment 
@@ -618,7 +618,7 @@ kubectl get ns
   - SSH Back into your `Jenkins-CI` Server
       - RUN: `kubectl get svc -n test-env`
       - **NOTE:** COPY the Exposed `NodePort Pod Number`
-      ![NodeportTestEnv](https://github.com/awanmbandi/realworld-microservice-project/blob/zdocs/images/dssdsdsdsasasfdghjkjnbf.png)
+      ![NodeportTestEnv](https://github.com/justine6/realworld-microservice-project/blob/zdocs/images/dssdsdsdsasasfdghjkjnbf.png)
   
   - Access The Application Running in the `Test Environment` within the Cluster
   - `Update` the EKS Cluster Security Group ***(If you've not already)***
@@ -630,7 +630,7 @@ kubectl get ns
   ![TestEnv]()
 
   - Stage Deployment Succeeded
-  ![TestEnv](https://github.com/awanmbandi/realworld-microservice-project/blob/zdocs/images/piepline2.png)
+  ![TestEnv](https://github.com/justine6/realworld-microservice-project/blob/zdocs/images/piepline2.png)
 
 ### PERFORM THE DEPLOYMENT NOW TO THE PRODUCTION ENVIRONMENT/NAMESPACE (EKS CLUSTER)
 - To perform the DEPLOYMENT to the Prod Envrionment 
@@ -659,16 +659,16 @@ kubectl get ns
       ![TestEnv]()
 
   - SonarQube Code Inspection Result For All Microservices Source Code
-  ![SonarQubeResult!](https://github.com/awanmbandi/realworld-microservice-project/blob/zdocs/images/sonarqube-test.png)
+  ![SonarQubeResult!](https://github.com/justine6/realworld-microservice-project/blob/zdocs/images/sonarqube-test.png)
 
   - Snyk SCA Test Result
-  ![SnykResult!](https://github.com/awanmbandi/realworld-microservice-project/blob/zdocs/images/snyk-sdcsvbfgddx.png)
+  ![SnykResult!](https://github.com/justine6/realworld-microservice-project/blob/zdocs/images/snyk-sdcsvbfgddx.png)
 
   - Test/Scan Dockerfiles with Open Policy Agent (OPA)
-  ![OPATest!](https://github.com/awanmbandi/realworld-microservice-project/blob/zdocs/images/OPA-Analysis.png)
+  ![OPATest!](https://github.com/justine6/realworld-microservice-project/blob/zdocs/images/OPA-Analysis.png)
 
   - Slack Continuous Feedback Alert
-  ![SlackResult!](https://github.com/awanmbandi/realworld-microservice-project/blob/zdocs/images/asasasdsffghgjkjhjtyreew.png)
+  ![SlackResult!](https://github.com/justine6/realworld-microservice-project/blob/zdocs/images/asasasdsffghgjkjhjtyreew.png)
 
 ### Congratulations Your Deployment Was Successful
 
