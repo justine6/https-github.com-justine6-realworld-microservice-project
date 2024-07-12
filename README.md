@@ -41,7 +41,7 @@
     * `app-product-catalog-service`
     * `app-recommendation-service`
     * `app-shipping-service`
-  - Download the Source Code of each microservice, from their respective branches from this Repository https://github.com/awanmbandi/realworld-microservice-project.git
+  - Download the Source Code of each microservice, from their respective branches from this Repository https://github.com/justine6/realworld-microservice-project.git
   - And Push the Code based on the Microservice to the specific Branch you Created for that Service.
 
 3) Create An IAM Profile/Role For The `Jenkins-CI` Server
