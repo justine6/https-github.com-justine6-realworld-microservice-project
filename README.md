@@ -69,7 +69,7 @@
         - What we actually need: `8080`, `9000` and `22` to `0.0.0.0/0`
     - Storage: Increase to `50 GB`
     - IAM instance profile: Select the `AWS-EC2-Administrator-Role`
-    - User data (Copy the following user data): https://github.com/awanmbandi/realworld-microservice-project/blob/main/installtions/installations.sh
+    - User data (Copy the following user data): https://github.com/justine6/realworld-microservice-project/blob/main/installtions/installations.sh
     - Launch Instance
 
 #### ⚠️ NOTE:ALERT ⚠️
@@ -259,13 +259,13 @@ kubectl get ns
     - Click on `Install`
     - Once all plugins are installed
     - Select/Check the Box **`Restart Jenkins when installation is complete and no jobs are running`**
-    ![PluginInstallation!](https://github.com/awanmbandi/realworld-microservice-project/blob/zdocs/images/afda.png)
+    ![PluginInstallation!](https://github.com/justine6/realworld-microservice-project/blob/zdocs/images/afda.png)
     - Refresh your Browser and Log back into Jenkins
     - Once you log back into Jenkins
 
 3)  #### Global tools configuration:
     - Click on Manage Jenkins -->> Global Tool Configuration
-    ![JDKSetup!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/blob/zdocs/images/sdsdsdsdsd.png)
+    ![JDKSetup!](https://github.com/justine6/realworld-cicd-pipeline-project/blob/zdocs/images/sdsdsdsdsd.png)
 
     - **JDK** 
         - Click on `Add JDK` -->> Make sure **Install automatically** is enabled 
@@ -289,7 +289,7 @@ kubectl get ns
       - Click on `Add SonarQube Scanner` 
       - Name: `SonarScanner`
       - Enable: `Install automatically` 
-      ![SonarQubeScanner!](https://github.com/awanmbandi/realworld-microservice-project/blob/zdocs/images/dcsdsvsvd.png)
+      ![SonarQubeScanner!](https://github.com/justine6/realworld-microservice-project/blob/zdocs/images/dcsdsvsvd.png)
 
     - **Snyk Installations** 
       - Click on ``Add Snyk`
